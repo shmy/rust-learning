@@ -1,8 +1,8 @@
-use std::io;
+extern crate hello;
+//use hello::hello_world::exec;
+//use hello::stdin::stdin::exec;
+use hello::rng::exec;
 
 fn main() {
-    println!("请输入字符");
-    let mut s = String::new();
-    io::stdin().read_line(&mut s).expect("err");
-    println!("你输入的是{}", s);
+    exec();
 }
